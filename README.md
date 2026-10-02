@@ -1,12 +1,16 @@
-# Speed Typing Test
+# Speed Typing
 
-This is a fun and interactive Speed Typing Test application built with HTML, CSS, and JavaScript. The application allows users to test their typing speed by typing a randomly generated quote as quickly and accurately as possible.
+A simple 30-second typing test. No build step, no dependencies.
 
-## Features
+## Run it
+Open `index.html` in any browser.
 
-- **Random Quotes**: Displays a random quote for each test.
-- **Typing Timer**: Tracks the time taken to complete the test.
-- **Real-Time Feedback**: Automatically checks if the typed text matches the quote.
-- **Responsive Design**: Works seamlessly on both desktop and mobile devices.
+## Files
+- `index.html` – page structure
+- `style.css` – look and feel
+- `script.js` – word generation, timer, WPM and accuracy
 
-
+## Ideas to extend
+- Change `DURATION` in `script.js` for longer or shorter tests
+- Swap in your own `WORDS` list
+- Save a best score with `localStorage`

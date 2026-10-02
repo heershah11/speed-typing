@@ -2,21 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Speed Typing Test</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Speed Typing</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Speed Typing Test</h1>
-    <p id="quote">Click "Start Test" to begin!</p>
-    <textarea id="input" placeholder="Start typing here..." disabled></textarea>
-    <div class="controls">
-      <button id="start-btn">Start Test</button>
-      <p id="timer">Time: 0s</p>
+  <main>
+    <h1>Speed typing</h1>
+    <div class="stats">
+      <div><span id="time">30</span> sec left</div>
+      <div><span id="wpm">0</span> wpm</div>
+      <div><span id="acc">100</span>% accuracy</div>
     </div>
-    <p id="result"></p>
-  </div>
+
+    <div id="text" class="text" tabindex="0" aria-label="Typing area"></div>
+    <p id="hint" class="hint">Click the text and start typing. The timer begins on your first key.</p>
+
+    <section id="result" class="result" hidden>
+      <p>Time's up. You typed <strong id="r-wpm">0</strong> words per minute at <strong id="r-acc">0</strong>% accuracy.</p>
+    </section>
+
+    <button id="restart" type="button">Restart</button>
+  </main>
   <script src="script.js"></script>
 </body>
 </html>
